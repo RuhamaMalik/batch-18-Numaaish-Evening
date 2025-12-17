@@ -1,0 +1,101 @@
+/* :root{
+  --bg-color: black;
+  --shadow: 2px 2px 6px rgb(163, 17, 17);
+  --color : pink;
+  --color2: rgb(112, 112, 16);
+}
+
+body{
+ background-color: var(--bg-color); 
+}
+
+h1{
+  color: var(--color) ;
+  text-shadow: var(--shadow);
+}
+
+p{
+  color: var(--color2);
+}
+
+
+.container{
+  width: 800px;
+  height: 400px;
+  background-color: azure;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+--text-color: lightgreen;
+
+
+}
+
+.container p{
+  color: var(--text-color);
+}
+
+
+h2{
+   color: var(--text-color); 
+} */
+
+
+
+.box {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(9, 110, 110);
+
+
+  /* min-height: 300px ; */
+  /* max-height: 300px;
+    overflow: auto; */
+
+}
+
+h1{
+  font-size: 6em;
+  text-align: center;
+}
+
+
+/* @media only screen and (max-width:1000px){
+
+  .box{
+    background-color: aquamarine;
+  }
+
+  h1{
+    font-size: 2em;
+  }
+
+}
+
+@media only screen and (max-width:500px) and (min-width:350px){
+ .box{
+    background-color: rgb(22, 197, 138);
+    width: 96%;
+  }
+} */
+
+
+/* @media only screen and(max-width:350px){
+.box{
+  width: 350px;
+}
+} */
+
+
+/* @media screen and (orientation: portrait){
+.box{
+  background-color: orchid;
+}
+}
+ */
+
+
