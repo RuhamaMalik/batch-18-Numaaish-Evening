@@ -1,0 +1,43 @@
+/* /////////////////// Header start */
+
+header{
+  padding: 20px;
+}
+header .wrapper, header .wrapper nav{
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+ header .wrapper nav{
+display: none;
+}
+
+/* /////////////////// Header end */
+/* /////////////////// Hero Section start */
+
+.hero .wrapper p{
+  font-size: 18px;
+}
+
+
+.btn button{
+  padding:0.8em 3em;
+  font-size: 16px;
+  
+}
+
+/* /////////////////// Hero Section  end */
+/* /////////////////// About section start */
+.about {
+  flex-direction: column;
+}
+.about img, .about .content{
+  width: 95%;
+}
+/* /////////////////// About section end */
+
+.services{
+ 
+  justify-content: center;
+}

@@ -1,0 +1,232 @@
+:root {
+  --base-color: #fff;
+  --contrast-color: #00aeef;
+  --text1: black;
+  /* --text2: #707070; */
+  --text2: #aca8a8;
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.sectionHead {
+  text-align: center;
+  font-size: 2.5vmax;
+  padding: 20px 10px;
+}
+
+.sectionHead span {
+  color: var(--contrast-color);
+}
+
+header {
+  background-color: var(--text1);
+  width: 100vw;
+  min-height: 70px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  padding: 0 2em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
+}
+
+header .wrapper .logo {
+  flex-grow: 2;
+  color: var(--contrast-color);
+}
+
+header .wrapper nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .wrapper nav a {
+  text-decoration: none;
+  color: var(--base-color);
+  font-size: 18px;
+}
+
+header .wrapper nav a:hover {
+  color: var(--contrast-color);
+}
+
+
+/* /////////////////// Hero section start */
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background-color: burlywood;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.63), rgba(224, 105, 105, 0.366), #0c121482), url(https://media.istockphoto.com/id/486309106/photo/evening-view-of-ama-dablam.jpg?s=612x612&w=0&k=20&c=nYB9IkZRtIHbew5p1acHiZXjxuIFKkC9fuXMwGrhf2w=) no-repeat center;
+
+  background-size: cover;
+  margin-top: 70px;
+
+
+}
+
+.hero .wrapper {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding: 40px;
+
+
+}
+
+.hero .wrapper h1 {
+  font-size: 3.5vmax;
+  text-align: center;
+}
+
+.hero .wrapper p {
+  font-size: 24px;
+  text-align: center;
+  color: var(--text2);
+}
+
+
+.btn {
+  display: flex;
+  gap: 20px;
+}
+
+ button {
+  border: none;
+  padding: 1em 3em;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-fill {
+  background-color: var(--contrast-color);
+  color: white;
+}
+
+.btn-fill:hover,
+.btn-outline:hover {
+  background-color: var(--text1);
+  color: white;
+}
+
+
+/* /////////////////// Hero section end */
+/* /////////////////// About section start */
+.about {
+  display: flex;
+  gap: 40px;
+  padding: 2em;
+}
+.about img, .about .content{
+  width: 45%;
+}
+
+.about .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.about .content p{
+  line-height: 25px;
+  color: var(--text2);
+}
+
+/* /////////////////// About section end */
+/* /////////////////// Services section start */
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-front img{
+  object-fit: cover;
+}
+
+.flip-card-back {
+  background-color: var(--contrast-color);
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+.services{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4em 2em;
+  gap: 40px;
+}
+
+/* /////////////////// Services section end */
