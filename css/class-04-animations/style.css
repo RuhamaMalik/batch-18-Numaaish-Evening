@@ -1,0 +1,132 @@
+/* .btn{
+  border: none;
+  margin: 4em;
+  padding: 2em 3em;
+  border-radius: 10px;
+  background-color: blueviolet;
+  color: white;
+  transition: background-color 1s ease-in-out, transform 1s ease-in;
+}
+
+.btn:hover{
+  background-color: blue;
+  transform: scale(150%);
+}
+
+
+.box{
+  height: 300px;
+  width: 300px;
+  background-color: brown;
+  margin: 80px;
+  border-radius: 50%;
+  transition: border-radius 1s ease, transform 2s ease-out;
+} */
+
+.box:hover {
+  /* border-radius: 0;
+  transform: translateX(400px); */
+  /* transform:skew(180deg) */
+}
+
+
+.box {
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+  margin: 80px;
+  animation-name: abcd_xyz;
+  animation-duration: 2s;
+  /* animation-iteration-count: 3; */
+  animation-iteration-count: infinite;
+
+}
+
+
+@keyframes abcd_xyz {
+  from {
+    background-color: blue;
+
+  }
+
+  to {
+    background-color: rgb(0, 200, 255);
+
+
+  }
+}
+
+
+
+.box2 {
+  height: 300px;
+  width: 300px;
+  background-color: rgb(212, 179, 81);
+  /* animation-name: moveRight; */
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+
+  clip-path: polygon(51% 64%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(5vw);
+    border-radius: 0;
+  }
+
+  to {
+    transform: translateX(50vw);
+    border-radius: 50%;
+  }
+
+  0% {
+    background-color: rgb(212, 179, 81);
+    box-shadow: 3px 3px 3px rgb(33, 15, 197);
+   
+  }
+
+  25% {
+    background-color: rgb(212, 146, 81);
+        box-shadow: 10px 10px 3px rgb(33, 15, 197);
+
+  }
+
+  50% {
+    background-color: rgb(122, 212, 81);
+            box-shadow: 20px 20px 3px rgb(33, 15, 197);
+
+  }
+
+  75% {
+    background-color: rgb(138, 72, 199);
+            box-shadow: 50px 50px 3px rgb(33, 15, 197);
+
+
+  }
+
+  100% {
+    background-color: rgb(235, 41, 80);
+            box-shadow: 80px 80px 3px rgb(33, 15, 197);
+
+  }
+
+
+
+}
+
+
+
+.slow{
+  animation-duration: 10s !important;
+
+}
+
+
+.tom{
+  animation-duration: 5s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+}
