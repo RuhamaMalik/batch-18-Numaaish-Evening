@@ -121,7 +121,7 @@ header .wrapper nav a:hover {
   gap: 20px;
 }
 
- button {
+button {
   border: none;
   padding: 1em 3em;
   font-size: 20px;
@@ -148,11 +148,13 @@ header .wrapper nav a:hover {
   gap: 40px;
   padding: 2em;
 }
-.about img, .about .content{
+
+.about img,
+.about .content {
   width: 45%;
 }
 
-.about .content{
+.about .content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -160,7 +162,7 @@ header .wrapper nav a:hover {
   gap: 30px;
 }
 
-.about .content p{
+.about .content p {
   line-height: 25px;
   color: var(--text2);
 }
@@ -183,14 +185,15 @@ header .wrapper nav a:hover {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -203,7 +206,7 @@ header .wrapper nav a:hover {
   color: black;
 }
 
-.flip-card-front img{
+.flip-card-front img {
   object-fit: cover;
 }
 
@@ -220,7 +223,7 @@ header .wrapper nav a:hover {
 
 
 
-.services{
+.services {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -230,3 +233,100 @@ header .wrapper nav a:hover {
 }
 
 /* /////////////////// Services section end */
+/* /////////////////// About 2 section start */
+
+.btns {
+  width: 100%;
+}
+
+.btns button {
+  width: 45%;
+
+
+}
+
+@media only screen and (max-width:1500px) {
+  .btns button {
+    width: 45%;
+    padding: 1em 2.5em;
+    font-size: 14px;
+
+  }
+}
+
+
+/* /////////////////// About 2 section end */
+/* /////////////////// FAQ's section start */
+
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.ques {
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-color: black;
+  color: white;
+}
+
+.ans {
+  background-color: rgb(255, 255, 255);
+  color: black;
+
+  padding: 0;
+  margin-top: 0;
+  height: 0;
+  opacity: 0;
+
+  transition:
+    opacity 0.5s ease-in-out,
+   
+    margin-top 0.5s ease-in-out,
+    height 0.5s ease-in-out;
+
+}
+
+.ques:hover .ans {
+  opacity: 1;
+  padding: 2em;
+  margin-top: 20px;
+  height: auto;
+}
+
+/* /////////////////// FAQ's section end */
+/* /////////////////// Footer section start */
+
+.footer{
+  background-color: var(--text1);
+  margin-top: 50px;
+  min-height: 400px;
+  color: white;
+  padding: 4em;
+
+  display: flex;
+}
+.child{
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer .tabs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  height: 220px;
+}
+
+.footer .tabs a{
+  text-decoration: none;
+  color: white;
+}
+
+/* /////////////////// Footer section end */

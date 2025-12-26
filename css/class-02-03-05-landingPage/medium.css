@@ -35,9 +35,19 @@ display: none;
 .about img, .about .content{
   width: 95%;
 }
-/* /////////////////// About section end */
+/* /////////////////// Services section end */
 
 .services{
- 
+  
   justify-content: center;
+}
+/* /////////////////// About2 section start */
+
+.btns{
+ flex-direction: column;
+}
+.btns button{
+  width: 95%;
+ 
+
 }
