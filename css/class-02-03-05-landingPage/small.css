@@ -7,3 +7,21 @@
 .hero .wrapper{
   padding: 20px;
 }
+
+
+
+
+
+
+.footer .content .form input {
+  width: 250px;
+  /* padding: .4em; */
+  font-size: 16px;
+}
+
+.footer .content .form button {
+  font-size: 16px;
+  border-radius: 0;
+  padding: .8em;
+}
+

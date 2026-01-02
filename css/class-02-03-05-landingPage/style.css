@@ -113,12 +113,14 @@ header .wrapper nav a:hover {
   font-size: 24px;
   text-align: center;
   color: var(--text2);
+  animation-delay: 1s;
 }
 
 
 .btn {
   display: flex;
   gap: 20px;
+  animation-delay: 2s ;
 }
 
 button {
@@ -128,6 +130,8 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
+
+
 
 .btn-fill {
   background-color: var(--contrast-color);
@@ -180,12 +184,16 @@ button {
 
 .flip-card-inner {
   position: relative;
+  isolation: isolate;
   width: 100%;
   height: 100%;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+
+
 }
 
 .flip-card:hover .flip-card-inner {
@@ -284,7 +292,7 @@ button {
 
   transition:
     opacity 0.5s ease-in-out,
-   
+
     margin-top 0.5s ease-in-out,
     height 0.5s ease-in-out;
 
@@ -300,7 +308,7 @@ button {
 /* /////////////////// FAQ's section end */
 /* /////////////////// Footer section start */
 
-.footer{
+.footer {
   background-color: var(--text1);
   margin-top: 50px;
   min-height: 400px;
@@ -308,15 +316,20 @@ button {
   padding: 4em;
 
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-.child{
+
+.child {
   /* background-color: bisque; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 10px;
 }
 
-.footer .tabs{
+.footer .tabs {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -324,9 +337,48 @@ button {
   height: 220px;
 }
 
-.footer .tabs a{
+.footer .tabs a {
   text-decoration: none;
   color: white;
+}
+
+
+.footer .content {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+justify-content: space-between;
+height: 220px;
+}
+
+.footer .content .form {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer .content .form input {
+  border: none;
+  outline: none;
+  width: 300px;
+  padding: .7em;
+  font-size: 18px;
+}
+
+.footer .content .form button {
+  font-size: 16px;
+  border-radius: 0;
+}
+
+
+.footer .icons a {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+.footer .icons a:hover {
+  color: var(--contrast-color);
 }
 
 /* /////////////////// Footer section end */
