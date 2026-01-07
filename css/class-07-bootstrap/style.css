@@ -1,0 +1,7 @@
+.header{
+  background-color: blueviolet !important;
+}
+
+.carousel-inner, .carousel,.carousel-item{
+  height: 70% !important;
+}
