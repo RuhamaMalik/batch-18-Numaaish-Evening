@@ -1,0 +1,14 @@
+.hero{
+/* background: url(https://www.nicepng.com/png/full/780-7800494_freetoedit-texture-background-effect-grainy-vintageeffe-monochrome.png), linear-gradient(90deg, #c1dee8d1 0%, #fbd9b9d7 100%); */
+background: linear-gradient(90deg, #C1DEE8 0%, #FBD9B9 100%);
+
+}
+
+
+
+
+@media only screen and (max-width:991px){
+.header{
+  border-radius: 0 !important;
+}
+}
