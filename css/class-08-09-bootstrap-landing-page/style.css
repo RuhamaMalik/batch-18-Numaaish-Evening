@@ -4,6 +4,9 @@ background: linear-gradient(90deg, #C1DEE8 0%, #FBD9B9 100%);
 
 }
 
+.content , .image{
+  width: 50%;
+}
 
 
 
@@ -11,4 +14,14 @@ background: linear-gradient(90deg, #C1DEE8 0%, #FBD9B9 100%);
 .header{
   border-radius: 0 !important;
 }
+
+.content , .image{
+  width: auto;
+}
+
+.content{
+ position: relative;
+ top: 50px !important;
+}
+
 }
