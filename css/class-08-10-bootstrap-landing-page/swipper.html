@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+
+  <!-- Demo styles -->
+  <style>
+    .swiper {
+      width: 100%;
+      height: 500px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #d40101;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    
+
+    .box {
+      height: 400px;
+      width: 400px;
+      background-color: #d40101;
+     clip-path: ellipse(44% 43% at 84% 83%);
+    }
+  </style>
+</head>
+
+<body>
+
+<div>
+    <div class="box"></div>
+</div>
+
+
+  <h1>Lorem ipsum dolor sit amet.</h1>
+
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae odit eos sed, veritatis voluptatibus
+    exercitationem consequatur maiores nobis corporis minus aliquid quaerat eius totam voluptas? Quia non beatae illo,
+    incidunt est, quam quasi perferendis quo, sapiente adipisci minima alias. Iste officia placeat quibusdam saepe
+    excepturi quae facilis blanditiis labore distinctio quia sapiente nemo, dolor sit totam consectetur neque odit in
+    vel? Autem placeat ducimus id fugit eaque ipsa ratione, dolores sit assumenda deleniti eum doloremque nam vero
+    tempora ex magni possimus molestiae dolor atque numquam est excepturi odit? Officia aspernatur mollitia porro,
+    similique perspiciatis temporibus voluptate dignissimos cum incidunt optio consectetur, sunt dolorum, perferendis
+    nulla nisi! Eum inventore vitae aperiam natus, illum laboriosam dolore maiores, quae in at nulla blanditiis minima
+    eveniet ipsum architecto fugiat nisi atque aliquid quas tenetur ut quam? Ducimus dolorum vero voluptate culpa sed
+    assumenda quas ullam optio dolores debitis aliquid nemo dignissimos ratione pariatur ab repudiandae, tempora
+    consequuntur laudantium id! Dolorem, a ullam. Voluptatem, possimus totam perferendis voluptas porro beatae at
+    cupiditate ipsa maiores laboriosam! Nemo laudantium consequuntur ipsum modi magni obcaecati laborum possimus,
+    molestias mollitia ducimus libero provident amet neque cumque dolorum sit natus quisquam suscipit adipisci. Libero
+    dolor qui vitae minima tempore vel accusantium ullam sapiente itaque saepe dicta, illo similique at. Cupiditate eius
+    cum nobis, doloribus blanditiis quo? Tempore numquam est non harum qui minus velit eius laudantium aut, blanditiis
+    nam excepturi cumque ea nulla veritatis nihil veniam temporibus quos quisquam quidem. Velit, facilis pariatur
+    nesciunt quidem hic rem dicta provident obcaecati veritatis, voluptas explicabo cum odit cumque! Doloribus natus
+    quidem deleniti fuga neque recusandae voluptate ipsa perspiciatis voluptatibus ipsam! Distinctio, hic. At optio
+    totam quasi, assumenda odit ab fuga. Recusandae hic vitae repellat, ipsa magnam quaerat ab laborum veritatis dolore
+    maiores deserunt possimus dolorem quod, nam aut ipsam ex laudantium? Ullam itaque harum recusandae dolor unde
+    provident sunt odio facilis modi fugiat, adipisci nulla. Dolorum ratione repellendus ullam doloremque assumenda
+    provident consequuntur nostrum optio rerum, est illum repudiandae temporibus incidunt ad ipsam mollitia sequi. Odit
+    natus, reiciendis alias facere non iste fuga pariatur, tempora ut, voluptate quas est eos repudiandae magnam
+    praesentium recusandae nam in minima doloremque deleniti debitis. Optio aliquid deserunt iure alias, ut explicabo ex
+    recusandae officia voluptas quo hic fugit non eius sed, libero doloribus possimus vel expedita nihil. Hic incidunt
+    itaque quas aliquid modi molestias amet velit perspiciatis dolores. Ut aliquid veniam similique, animi sed quibusdam
+    ipsa cum, asperiores, in doloribus repudiandae deserunt deleniti iste. Dolorem optio ipsa atque iusto libero
+    deleniti dolor, perferendis dolores minus nulla qui corrupti quibusdam laborum, voluptas voluptatum omnis
+    necessitatibus similique? Quas dignissimos rerum maxime accusantium ducimus commodi beatae molestiae hic officiis?
+    Quae quasi officia quo eos debitis suscipit blanditiis ipsam adipisci quisquam architecto aliquam ab voluptate
+    accusantium dolores molestiae, deserunt ad id rem perferendis quam aut officiis neque modi voluptas. In iusto at
+    accusantium officia, eligendi assumenda perspiciatis obcaecati dolore molestiae corporis sit sed voluptas ab
+    tempore. Perspiciatis, reiciendis molestias consectetur dignissimos necessitatibus tenetur laudantium iste a
+    corporis inventore? Deleniti, ipsa?</p>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+</body>
+
+</html>
