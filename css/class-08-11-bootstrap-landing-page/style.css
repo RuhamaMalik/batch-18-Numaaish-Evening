@@ -13,11 +13,19 @@ background: linear-gradient(90deg, #C1DEE8 0%, #FBD9B9 100%);
 }
 
 
+.teamHead{
+  width:  50% !important;
+}
+
 
 
 @media only screen and (max-width:991px){
 .header{
   border-radius: 0 !important;
+}
+
+.teamHead{
+  width: 95% !important;
 }
 
 .content , .image{
@@ -29,6 +37,8 @@ background: linear-gradient(90deg, #C1DEE8 0%, #FBD9B9 100%);
  top: 50px !important;
 }
 
-
+.imgSmall{
+  width: 80% !important;
+}
 
 }
