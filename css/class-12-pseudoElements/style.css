@@ -1,0 +1,133 @@
+/* 
+.card p:nth-child(1){
+  color: chocolate;
+}
+
+
+li:nth-child(3){
+  color: aquamarine;
+} */
+
+
+
+
+/* .box p:nth-child(4) {
+  color: red
+} */
+
+
+/* /////////////////////////// */
+
+
+/* .box p:nth-of-type(2) {
+  color: blueviolet;
+} */
+
+
+.stTable {
+  border: 1px solid black;
+  width: 800px;
+  border-collapse: collapse;
+
+
+}
+
+
+/* .stTable tr:nth-of-type(even) {
+  background-color: gray;
+}
+
+.stTable tr:nth-of-type(odd) {
+  background-color: rgb(95, 161, 226);
+} */
+
+/* .stTable tr:nth-of-type(2n+5) {
+  background-color: rgb(206, 127, 232);
+} */
+
+/* ////////////////// */
+/* 
+
+
+.para{
+  font-size: 4em;
+}
+
+.para::before{
+  content: "→";
+  color: blueviolet;
+  background-color: rgba(137, 43, 226, 0.489);
+  padding: 1em;
+  border-radius: 50%;
+}
+ */
+
+
+
+.container {
+  height: 500px;
+  max-width: 1800px;
+  margin: 0 auto;
+  background-color: rgb(197, 96, 96);
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.container::before {
+  content: "";
+  padding: 15em;
+  border-radius: 50%;
+  background-color: rgb(206, 176, 155);
+  position: absolute;
+  left: -10em;
+  top: -10em;
+
+}
+
+
+
+.container .circle1 {
+  padding: 15em;
+  border-radius: 50%;
+  background-color: rgb(206, 176, 155);
+  position: absolute;
+  left: 7em;
+  top: -10em;
+
+}
+
+.container::after {
+  content: "";
+  padding: 15em;
+  border-radius: 50%;
+  background-color: rgb(155, 181, 206);
+  position: absolute;
+  right: -10em;
+  bottom: -10em;
+
+}
+
+
+.abcd {
+  height: 500px;
+  width: 500px;
+  background-color: blueviolet;
+  position: relative;
+  top: -12em;
+}
+
+/* .xyz {
+  height: 250px;
+  width: 250px;
+  background-color: rgb(129, 189, 236);
+  position: absolute;
+  right: 0;
+} */
