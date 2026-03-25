@@ -1,0 +1,20 @@
+/* .img{
+  width: 500px;
+  box-shadow: 5px 5px 2px greenyellow;
+ 
+}
+
+
+.hide{
+  visibility: hidden;
+}
+
+.visible{
+  visibility: visible;
+} */
+
+
+#image{
+  width: 800px;
+  height: 400px;
+}
