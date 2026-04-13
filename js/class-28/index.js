@@ -34,7 +34,32 @@
 //   console.log(name.value);
 // })
 
-let str = 'cat';
+// let str = 'cat';
 
-console.log(str[2]);
+// console.log(str[2]);
 
+// try {
+//   let x = 10 / 0;
+//   if(x === Infinity){
+//     throw new Error("Cannot divided by 0")
+//   }
+
+// } catch (error) {
+//   console.log(error);
+
+// }
+
+
+let fruit = 'apple';
+
+function abcd(a, b, c, d) {
+   fruit = 'banana';
+  // console.log(arguments); // arguments
+  // console.log(arguments.length); // 3 arguments
+  // console.log(abcd.length); // 4 parameters length
+
+console.log('inner >>> ' , fruit);
+
+}
+abcd("a", "b", "c");
+console.log('outer >>> ' , fruit);
