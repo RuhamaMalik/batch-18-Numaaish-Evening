@@ -74,41 +74,49 @@
 
 // let iterator = customIterator([1,2,3,4,5]);
 
-// console.log(iterator.next());
+// // console.log(iterator.next());
+
+// for (let ele of iterator){ // error
+// console.log(ele);
+// }
 
 /////////////////////////////////////
 
 
 
-function customIterator(arr) {
-  return {
-    [Symbol.iterator]() {
-      let index = 0;
-      return {
-        next() {
-          if (index < arr.length) {
-            return {
-              value: arr[index++],
-              done: false
-            }
-          } else {
-            return {
-              done: true,
-              value: undefined
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// function customIterator(arr) {
+//   return {
+//     [Symbol.iterator]() {
+//       let index = 0;
+//       return {
+//         next() {
+//           if (index < arr.length) {
+//             return {
+//               value: arr[index++],
+//               done: false
+//             }
+//           } else {
+//             return {
+//               done: true,
+//               value: undefined
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-let iterator = customIterator([1, "apple", 3, 4, 5]);
-let kuchBhi = iterator[Symbol.iterator]()
+// let iterator = customIterator([1, "apple", 3, 4, 5]);
+// let kuchBhi = iterator[Symbol.iterator]()
 
-console.log(kuchBhi.next());
-console.log(kuchBhi.next());
+// // console.log(kuchBhi.next());
+// // console.log(kuchBhi.next());
 
+// for(let ele of iterator){
+// console.log(ele);
+
+// }
 
 
 
