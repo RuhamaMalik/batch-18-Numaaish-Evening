@@ -1,0 +1,8 @@
+ git branch branchName ---- create
+ git checkout branchName ----- select
+git checkout -b branchName ------- create and select
+git log 
+git log --oneline
+git diff  brnach1 branch2
+
+
