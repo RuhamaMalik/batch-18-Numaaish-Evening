@@ -2,7 +2,7 @@ Team A
 Mishkat + Hooriya
 
 Team B
-Maryam Arshad + Fareeha Mansoor + Aqsa khattak
+ Fareeha Mansoor + Aqsa khattak
 
 Team C
 Maheen danish + Zoha Altaf
@@ -16,5 +16,3 @@ Umaima Aslam + Bakhtawar
 Team F 
 Husna Bibi + !Laiba Hussain + Afia Furqan
 
-Team G
-Anjum shahzadi + Maheen Kanwal
