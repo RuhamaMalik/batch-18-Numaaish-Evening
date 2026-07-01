@@ -63,19 +63,88 @@
 // prod2.discount = '70%';
 // console.log(prod2);
 ////////////////////// Getter / Setter
-class Student {
-    constructor(name, batch, dob) {
-        this.name = name;
-        this.batch = batch;
-        this.dob = dob;
-        this.subjects = [];
-    }
-    addSubjects(subj) {
-        this.subjects.push(subj);
-    }
-}
-let stu1 = new Student('Sara', 18, '7-july-2025');
-stu1.addSubjects('English');
-console.log(stu1);
+// class Student {
+//   private subjects: string[] = [];
+//   constructor(public name: string, readonly batch: number, private dob: string) { }
+//   addSubjects(subj: string) {
+//     this.subjects.push(subj);
+//   }
+//   getSubjects(): string[] {
+//     return this.subjects;
+//   }
+// }
+// let stu1 = new Student('Sara', 18, '7-july-2025');
+// stu1.addSubjects('English');
+// stu1.addSubjects('Math');
+// console.log(stu1.getSubjects());
+/////////////////////////// Encapsulation
+// class Student {
+//   private subjects: string[] = [];
+//   private _hobbies: string[] = [];
+//   constructor(
+//     public name: string,
+//     readonly batch: number,
+//     private _dob: string,
+//   ) { }
+//   get dob() {
+//     return this._dob;
+//   }
+//   set dob(hbd: string) {
+//     if(!hbd){
+//      throw Error('dob should not be empty!')
+//     }
+//     this._dob = hbd;
+//   }
+//   get hobbies(): string[] {
+//     return this._hobbies;
+//   }
+//   set hobbies(h: string) {
+//     this._hobbies.push(h);
+//   }
+// }
+// let st1 = new Student('Ayesha', 18, '12-12-12');
+// st1.dob = '01-12-15';
+// console.log(st1);
+// st1.hobbies = 'reading';
+// console.log(st1.hobbies);
+/////////////////////////////// Inheritance
+/////////// parent class / super / base
+/////////// child class / sub / drived
+// class Product { // base class
+//   constructor(
+//       _id: number,
+//     public title: string,
+//     readonly price: number
+//   ) { }
+// }
+// class ElectronicProduct extends Product {
+//   constructor(
+//     _id: number,
+//     title: string,
+//     price: number,
+//     private _brand: string,
+//     private _warranty: string
+//   ) {
+//     super(_id, title, price)
+//   }
+// }
+// let mobile = new ElectronicProduct(123,'SAMSUNG',40000, 'A06','2 days');
+// console.log(mobile);
+////////////////////////////////////////
+let text = document.getElementById('input');
+let form = document.getElementById('form');
+let btn = document.getElementById('btn');
 export {};
+/////////////// button and enter key
+// form.addEventListener('submit',(e)=>{
+// e.preventDefault();
+// console.log(text.value);
+// })
+////////////  without button
+// text.addEventListener('keydown', (e) => {
+//   if (e.key === 'Enter') {
+//     e.preventDefault();
+//       console.log(text.value);
+//   }
+// })
 //# sourceMappingURL=index.js.map
