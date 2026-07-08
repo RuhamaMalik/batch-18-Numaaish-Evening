@@ -140,11 +140,158 @@ abstract class Animal {
 
 
 
+////////////////////////// Union | Intersection
+
+// type A = {
+//   id: number;
+//   title: string;
+// }
+
+// type B = {
+//   batch: string;
+//   colour: string;
+//   age: number
+// }
+
+
+// type C = A | B
+
+// let obj: C = {
+//   id: 1,
+//   title: 'Abcd Product',
+
+//   // batch:'18-evening',
+//   colour: 'pink',
+//   age: 10,
+
+//   // abcd:'xyz' // error
+// }
+
+
+// type D = A & B
+
+// let obj:D = {
+//    id: 1,
+//   title: 'Abcd Product',
+
+//   batch:'18-evening',
+//   colour: 'pink',
+//   age: 10,
+// }
+
+// type A = {
+//   type:'A';
+//   id: number;
+//   title: string;
+// }
+
+// type B = {
+//   type:'B';
+//   batch: string;
+//   colour: string;
+//   age: number
+// }
+
+// type C = A | B
+
+// let obj:C = {
+//   type:'A',
+//   id:10,
+//   title:'Abcd',
+//   // colour:'red' // error
+// }
+
+
+////////////////////////// Interface
+
+interface A {
+  name: string,
+  subject: string,
+  goodBye(): void
+}
+
+interface B {
+  age: number;
+  email: string
+}
+
+interface C extends A, B {
+  contact: number,
+  image?: string
+}
+
+interface D extends C { }
+
+// let obj:C ={
+//   name:'XYZ',
+//   subject:'Math',
+//   goodBye(){
+//     console.log(`Bye bye ${this.name}`);
+//   },
+//   age:10,
+//   email:'abcd@gmail.com',
+//   // skills:[],
+//   contact:732637232
+// }
+
+// class Person implements C {
+//   constructor(
+//     public name: string,
+//     public age: number,
+//     public subject: string,
+//     public email: string,
+//     public contact: number,
+//     public image: string=''
+//   ) { }
+
+//   goodBye(): void {
+//     console.log(`Bye Bye ${this.name}`);
+
+//   }
+// }
+
+// let person1 = new Person('Sara',10,'English','sara@gmai.com',3434343);
+// person1.goodBye();
+
+///////////////////////////////
+
+// type Data = {abcd:string}
+// type Data = {abcd:string}
+
+// interface Data {name:string}
+// interface Data {age:number}
+
+// let obj:Data = {
+//   name:'Hina',
+//   age:10
+// }
+
+///////////////// Type Casting
+
+// <>   as
+
+// let str:any = 'abcd';
+// console.log(str.toLowerCase());
+// console.log(Math.round(str));
+
+
+// let str:unknown = 'abcd';
+// console.log((str as string).toLowerCase());
+// console.log((<string>str).toUpperCase());
+
+
+// let num:unknown = 67.81;
+// console.log(Math.round(num as number));
 
 
 
-//// Type Casting
-//// Generics
+////////// Generics
+
+
+
+
+
+
 //// ENUMS
 //// Decorators
 //// Function Overloading
